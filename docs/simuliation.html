@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quantum Cryptography Simulation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Simulation interface -->
+    <div class="container">
+      <!-- Alice's device -->
+      <div class="device">
+        <h2>Alice's Device</h2>
+        <div class="message">
+          <label for="alice-message">Message to send:</label>
+          <input type="text" id="alice-message" />
+        </div>
+        <div class="button" onclick="sendAlice()">Send Message</div>
+        <div class="message">
+          <label for="alice-received">Received message:</label>
+          <input type="text" id="alice-received" readonly />
+        </div>
+      </div>
+      <!-- Bob's device -->
+      <div class="device">
+        <h2>Bob's Device</h2>
+        <div class="message">
+          <label for="bob-message">Message to send:</label>
+          <input type="text" id="bob-message" />
+        </div>
+        <div class="button" onclick="sendBob()">Send Message</div>
+        <div class="message">
+          <label for="bob-received">Received message:</label>
+          <input type="text" id="bob-received" readonly />
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript code for the simulation -->
+    <script src="scriptQD.js"></script>
+  </body>
+</html>
